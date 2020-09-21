@@ -1,0 +1,16 @@
+{
+  "name": "microfrontends",
+  "version": "1.0.1",
+  "description": "Microfrontends package",
+  "author": "",
+  "main": "Microfrontends.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.1",
+    "systemjs": "^6.1.4"
+  },
+  "bundledDependencies": [
+    "axios",
+    "systemjs"
+  ]
+}

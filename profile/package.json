@@ -1,0 +1,52 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "Microfronted - Profile application",
+  "main": "./bff/application.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./bff/application.js",
+    "build": "NODE_ENV=development node_modules/.bin/webpack --config client/webpack.config.js --display-error-details"
+  },
+  "dependencies": {
+    "axios": "^0.18.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "microfrontends": "file:/home/CIT/kleberls/Documents/workspace/dojo-microfrontends/microfrontends/microfrontends-1.0.1.tgz"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.4.5",
+    "babel-core": "^7.0.0-bridge.0",
+    "assets-webpack-plugin": "^3.9.10",
+    "autoprefixer": "^9.7.0",
+    "babel-loader": "^8.0.5",
+    "clean-webpack-plugin": "^2.0.2",
+    "copy-webpack-plugin": "^5.0.5",
+    "core-js": "^3.6.5",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "flush-promises": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.13.0",
+    "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "postcss-scss": "^2.0.0",
+    "sass-loader": "^7.3.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-stream": "^5.2.1"
+  }
+}
