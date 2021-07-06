@@ -3,7 +3,7 @@ import Microfrontends from 'microfrontends';
 const routes = [
   {
     path: 'dashboard',
-    title: 'Painel',
+    title: 'Dashboard',
     module: {
       name: 'dashboard',
       host: 'http://localhost:8082',
@@ -12,7 +12,7 @@ const routes = [
   },
   {
     path: 'profile',
-    title: 'Perfil',
+    title: 'Profile',
     module: {
       name: 'profile',
       host: 'http://localhost:8083',
@@ -36,6 +36,11 @@ const router = {
       await Microfrontends.load(currentRoute.module, document.getElementById('router-outlet'));
     } catch(error) {
       console.error('Error loading module');
+      document.getElementById('router-outlet').innerHTML = `
+      <div class="alert alert-danger" role="alert">
+        Erro ao carregar o microfrontend ${currentRoute.title}
+      </div>
+      `;
     }
   },
 
@@ -55,6 +60,11 @@ const router = {
         await Microfrontends.load(currentRoute.module, document.getElementById('router-outlet'));
       } catch(error) {
         console.error('Error loading module');
+        document.getElementById('router-outlet').innerHTML = `
+        <div class="alert alert-danger" role="alert">
+          Erro ao carregar o microfrontend ${currentRoute.title}
+        </div>
+        `;
       }
     }
   },

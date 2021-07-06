@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const title = 'Dojo Microfrontends';
+const title = 'Microfrontends';
 const assetsFile = `${__dirname}/../../../../assets.json`;
 
 let assets = {};
@@ -12,8 +12,10 @@ const orchestratorController = {
     res.send(`
       <html lang="pt-br">
         <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
           <script defer src="${assets.orchestrator.js}"></script>
           <title>${title}</title>
+          <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
           <link href="${assets.orchestrator.css}" rel="stylesheet" type="text/css" />
         </head>
         <body>
@@ -22,7 +24,7 @@ const orchestratorController = {
               <div class="row">
                 <div class="col-12">
                   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <span class="navbar-brand mb-0 h1">Navigation</span>
+                    <span class="navbar-brand mb-0 h1">Navigation:</span>
                     <div class="navbar-collapse">
                       <ul class="navbar-nav mr-auto">
                         <li class="nav-item">

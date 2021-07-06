@@ -15,7 +15,7 @@
     "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
     "express": "^4.17.1",
-    "microfrontends": "file:/..microfrontends-1.0.1.tgz"
+    "microfrontends": "file:../microfrontends/microfrontends-1.0.1.tgz"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
